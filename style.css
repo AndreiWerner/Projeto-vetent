@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'p';
+    src: url(Fonts/BalooTamma2-VariableFont_wght.ttf) format(Truetype);
+}
+@font-face {
+    font-family:'Vertent';
+    src: url(Fonts/El_Messiri/ElMessiri-VariableFont_wght.ttf) format(Truetype);
+}
+
+:root{
+    --cor01:#202C39;
+    --cor0: #868686;
+    --cor03:#EDB458;
+    --cor04:#EAF6FF;
+    --cor05:#4E1B0A;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+
+}
+header {
+    background-color: var(--cor01);
+    height: 140px;
+    text-align: center;
+}
+header h1 {
+    font-family:'Vertent';
+    color:var(--cor03);
+    font-size: 1,5em;
+    padding-top: 20px;
+    font: weight 500px;
+    text-shadow: 1px 1px 7px black;
+}
+header > p {
+    color:var(--cor04);
+    font-size: 1em;
+    font-family:'p';
+    margin: 0px;
+    padding: 0px;
+}
+header picture > img {
+    width:170px;
+    height: 160px;
+}
+nav {
+    background-color: var(--cor0);
+}
+nav > a {
+    font-family: 'Vertent';
+    text-decoration: none;
+    color: var(--cor04);
+    font-size: 1.2em;
+    margin:0px 20px 0px 10px;
+    text-shadow: 1px 2px 7px black;
+}
+nav a:hover {
+    background-color: #EDB458;
+    color: #202C39;
+    box-shadow:1px 1px 5px black ;
+    padding: 4px;
+}
+main {
+    background-color: var(--cor04);
+    height: 1000px;
+    width: 90%;
+    margin: auto;
+    box-shadow: 1px 2px 15px black;
+    margin-top: 15px;
+    border-radius: 19px;
+}
