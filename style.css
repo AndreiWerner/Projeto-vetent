@@ -20,13 +20,10 @@
     padding: 0px;
     margin: 0px;
 }
-body{
-
-}
 header {
-    background-color: var(--cor01);
     height: 140px;
     text-align: center;
+    background-image:url(img/fundo.png);
 }
 header h1 {
     font-family:'Vertent';
@@ -42,6 +39,21 @@ header > p {
     font-family:'p';
     margin: 0px;
     padding: 0px;
+}
+div.header {
+    margin: 0px;
+    padding: 0px;
+    width: 100px;
+}
+header img{
+    width: 100px;
+    opacity: 100%;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    float: right;
+    margin: 14px 4px 0px 0px;
 }
 header picture > img {
     width:170px;
@@ -59,10 +71,11 @@ nav > a {
     text-shadow: 1px 2px 7px black;
 }
 nav a:hover {
-    background-color: #EDB458;
-    color: #202C39;
+    background-color: #6e6d6b91;
+    color:var(--cor03);
     box-shadow:1px 1px 5px black ;
-    padding: 4px;
+    border-radius: 5px;
+    padding: 0px 1px 0px 1px;
 }
 main {
     background-color: var(--cor04);
