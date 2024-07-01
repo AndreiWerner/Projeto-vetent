@@ -8,6 +8,10 @@
     font-family:'Vertent';
     src: url(Fonts/El_Messiri/ElMessiri-VariableFont_wght.ttf) format(Truetype);
 }
+@font-face {
+    font-family:'h2';
+    src: url(Fonts/BalooBhai2-VariableFont_wght.ttf) format(Truetype);
+}
 
 :root{
     --cor01:#202C39;
@@ -81,9 +85,86 @@ nav a:hover {
 main {
     background-color: var(--cor04);
     height: 1000px;
-    width: 98%;
+    width: 99%;
     margin: auto;
     box-shadow: 1px 2px 15px black;
     margin-top: 15px;
     border-radius: 19px;
+}
+article  h2 {
+    font-family: 'h2';
+    padding: 8px;
+    background-color: #202c39da;
+    border-radius: 10px 10px 0px 0px;
+    color: #EAF6FF;
+    text-shadow: 1px 2px 4 15px;
+}
+article> p {
+    font-family: 'h2';
+    line-height: 23px;
+    text-align: justify;
+    box-shadow: 0px 8px 100px black;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+article > h3{
+    background-color: #1C181D;
+    color: #EAF6FF;
+    padding: 15px;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 20px;
+    text-align: center;
+    font-size:1.5em;
+    font-family: 'vertent';
+    margin: 0px;
+    padding: 0px;
+}
+aside {
+    width: 95%;
+    height: 680px;
+    background-color: #1C181D;
+    margin: auto;
+    margin-top: 6px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 10px;
+}
+.quadrado {
+    border: 1px solid black;
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    background-color:var(--cor04);
+    display: inline-block;
+    margin-top: 30px;
+    
+}
+#q1 > h4 {
+    text-align: center;
+    color: var(--cor03);
+    font-family: 'vertent';
+    font-size: 1.8em;
+    margin-top: 5px;
+}
+#q1 > p {
+    color: #202C39;
+    text-align: center;
+    font-family: 'h2';
+    font-size: 1.3em;
+}
+#q2 > h4 {
+    text-align: center;
+    color: var(--cor03);
+    font-family: 'vertent';
+    font-size: 1.8em;
+    margin-top: 5px;
+}
+#q2 > p {
+    color: #202C39;
+    text-align: center;
+    font-family: 'h2';
+    font-size: 1.3em;
 }
