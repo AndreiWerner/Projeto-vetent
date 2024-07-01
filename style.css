@@ -13,54 +13,52 @@
     src: url(Fonts/BalooBhai2-VariableFont_wght.ttf) format(Truetype);
 }
 
-:root{
-    --cor01:#202C39;
+:root {
+    --cor01: #202C39;
     --cor0: #868686;
-    --cor03:#EDB458;
-    --cor04:#EAF6FF;
-    --cor05:#4E1B0A;
+    --cor03: #EDB458;
+    --cor04: #EAF6FF;
+    --cor05: #4E1B0A;
 }
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 header {
     height: 140px;
     text-align: center;
-    background-image:url(img/fundo.png);
+    background-image: url(img/fundo.png);
 }
 header h1 {
-    font-family:'Vertent';
-    color:var(--cor03);
-    font-size: 1,5em;
+    font-family: 'Vertent';
+    color: var(--cor03);
+    font-size: 1.5em;
     padding-top: 20px;
-    font: weight 500px;
+    font-weight: 500;
     text-shadow: 1px 1px 7px black;
 }
 header > p {
-    color:var(--cor04);
+    color: var(--cor04);
     font-size: 1em;
-    font-family:'p';
-    margin: 0px;
-    padding: 0px;
+    font-family: 'p';
+    margin: 0;
+    padding: 0;
 }
 div.header {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     width: 100px;
 }
-header img{
+header img {
     width: 100px;
     opacity: 100%;
     display: block;
-    margin: 0px;
-    padding: 0px;
-    display: block;
     float: right;
-    margin: 14px 4px 0px 0px;
+    margin: 14px 4px 0 0;
 }
 header picture > img {
-    width:170px;
+    width: 170px;
     height: 160px;
 }
 nav {
@@ -77,94 +75,138 @@ nav > a {
 }
 nav a:hover {
     background-color: #6e6d6b91;
-    color:var(--cor03);
-    box-shadow:1px 1px 5px black ;
+    color: var(--cor03);
+    box-shadow: 1px 1px 5px black;
     border-radius: 5px;
-    padding: 0px 1px 0px 1px;
+    padding: 0 1px;
 }
 main {
     background-color: var(--cor04);
-    height: 1000px;
     width: 99%;
     margin: auto;
     box-shadow: 1px 2px 15px black;
     margin-top: 15px;
     border-radius: 19px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-article  h2 {
+article h2 {
     font-family: 'h2';
     padding: 8px;
     background-color: #202c39da;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0 0;
     color: #EAF6FF;
-    text-shadow: 1px 2px 4 15px;
+    text-shadow: 1px 2px 4px black;
 }
-article> p {
+article > p {
     font-family: 'h2';
     line-height: 23px;
     text-align: justify;
     box-shadow: 0px 8px 100px black;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0 0 10px 10px;
     padding: 10px;
     margin-bottom: 10px;
 }
-article > h3{
+article > h3 {
     background-color: #1C181D;
     color: #EAF6FF;
     padding: 15px;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0 0;
     margin-top: 20px;
     text-align: center;
-    font-size:1.5em;
+    font-size: 1.5em;
     font-family: 'vertent';
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 aside {
     width: 95%;
-    height: 680px;
     background-color: #1C181D;
     margin: auto;
     margin-top: 6px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    align-items: flex-start; 
+    align-items: flex-start;
     gap: 10px;
+    flex-wrap: wrap;
 }
 .quadrado {
     border: 1px solid black;
     width: 390px;
     height: 500px;
     border-radius: 10px;
-    background-color:var(--cor04);
+    background-color: var(--cor04);
     display: inline-block;
     margin-top: 30px;
-    
 }
-#q1 > h4 {
+#q1 > h4, #q2 > h4 {
     text-align: center;
     color: var(--cor03);
     font-family: 'vertent';
     font-size: 1.8em;
     margin-top: 5px;
 }
-#q1 > p {
+#q1 > p, #q2 > p {
     color: #202C39;
     text-align: center;
     font-family: 'h2';
     font-size: 1.3em;
 }
-#q2 > h4 {
-    text-align: center;
-    color: var(--cor03);
-    font-family: 'vertent';
-    font-size: 1.8em;
-    margin-top: 5px;
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 20px;
+    }
+    header h1 {
+        font-size: 1.2em;
+        padding-top: 10px;
+    }
+    header img, header picture > img {
+        width: 80px;
+        height: auto;
+    }
+    nav > a {
+        font-size: 1em;
+        margin-right: 10px;
+    }
+    main {
+        width: 100%;
+        margin-top: 10px;
+        box-shadow: none;
+        border-radius: 0;
+    }
+    aside {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .quadrado {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+    article h2, article > h3 {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+    article > p {
+        font-size: 1em;
+        padding: 10px;
+    }
 }
-#q2 > p {
-    color: #202C39;
-    text-align: center;
-    font-family: 'h2';
-    font-size: 1.3em;
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1em;
+    }
+    nav > a {
+        font-size: 0.8em;
+        margin-right: 5px;
+    }
+    .quadrado {
+        width: 100%;
+        height: auto;
+    }
 }
