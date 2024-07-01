@@ -154,7 +154,6 @@ aside {
     font-family: 'h2';
     font-size: 1.3em;
 }
-
 /* Responsive Styles */
 @media (max-width: 768px) {
     header {
