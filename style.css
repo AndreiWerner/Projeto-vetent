@@ -64,11 +64,11 @@ nav {
     text-align: center;
 }
 nav > a {
-    font-family: 'Vertent';
+    font-family: 'p';
     text-decoration: none;
     color: var(--cor04);
     font-size: 1.2em;
-    margin:0px 10px 0px 10px;
+    margin-right: 20px;
     text-shadow: 1px 2px 7px black;
 }
 nav a:hover {
@@ -81,7 +81,7 @@ nav a:hover {
 main {
     background-color: var(--cor04);
     height: 1000px;
-    width: 90%;
+    width: 98%;
     margin: auto;
     box-shadow: 1px 2px 15px black;
     margin-top: 15px;
