@@ -78,7 +78,7 @@ nav a:hover {
     color: var(--cor03);
     box-shadow: 1px 1px 5px black;
     border-radius: 5px;
-    padding: 0 3px 0px 3px;
+    padding: 0 5px 0px 5px;
 }
 main {
     background-color: var(--cor04);
