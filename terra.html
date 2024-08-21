@@ -35,15 +35,40 @@
         main {
             position: relative;
             width: 80%;
-            height: 800px;
+            height: 600px;
             background-color: white;
             margin: auto;
             border-radius: 0px 0px 20px 20px;
             box-shadow: 2px 6px 10px black;
             padding-top: 20px;
+            background:url(img/login.main.jpg);
+            background-size: cover;
+            background-attachment: fixed;
 
         }
-        form  {
+        legend {
+            font-size: 1.5em;
+        }
+        iframe {
+            width: 80%;
+            height: 230px;
+            position: relative;
+            left: 67px;
+        
+        }
+        main h1 {
+            text-align: center;
+            background-color: #868686;
+            border-radius: 20px 20px 0px 0px;
+            font-family: 'sec';
+        }
+        .cad {
+            background-color: #202c39ce;
+            border-radius: 20px;
+            height: 300px;
+        }
+
+        .form  {
             width: 520px;
             height: 220px;
             margin: auto;
@@ -52,23 +77,16 @@
             box-shadow: 1px 1px 8px black;
             font-family: 'form';
         }
-        legend {
-            font-size: 1.5em;
-        }
-        iframe {
-            width: 70%;
-            height: 230px;
-            position: relative;
-            left: 154px; 
-        }
-        main h1 {
-            width: 70%;
-            background-color: #202C39;
-            text-align: center;
-            font-family: 'sec';
+        #form2 {
+            width: 920px;
+            height: 220px;
             margin: auto;
-            margin-top: 20px;
-            border-radius: 20px 20px 0px 0px;
+            background-color: #202C39;
+            border-radius: 10px;
+            box-shadow: 1px 1px 8px black;
+            font-family: 'form';
+            text-align: center;
+
         }
     </style>
 </head>
@@ -78,34 +96,46 @@
     </section>
 
     <main>
-        <div id="forme">
-           <form action="cadastro.php" method="get" autocomplete="on">
+        <Div>
+           <form class="form" action="cadastro.php" method="get" autocomplete="on" >
          <fieldset>
             <legend> Login </legend>
             <p>
                 <label for="imat">Matrícula.:</label>
-                <input type="number" name="mat" id="imat" placeholder="000">
+                <input type="number" name="mat" id="imat" placeholder="000" required>
             </p>
             <p>
                 <label for="iid">CPF.:</label>
-                <input  name="sexo" id="isexm" placeholder="000.000.000-00">
+                <input  name="sexo" id="isexm" placeholder="000.000.000-00" required>
             </p>
             <p>
                 <input type="submit" value="Enviar">
             </p>
             </fieldset>
-        </div>
+        </form>
+        </Div>
+        <Div class="cad">
         <h1> Cadastro</h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/J3Pmvf6qLIo?si=SxTnabaYzGA9yIDR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <form action="cadastro.php" method="post" autocomplete="on">
+        <Div>
+        <form id="form2" action="cadastro.php" method="get" autocomplete="on">
+            <fieldset>
             <legend>Dados Pessoaiss</legend>
             <p>
                 <label for="inome">Nome.:</label>
-                <input type="text" name="nome" id="inome" placeholder="Andrei de Oliveira Werner">
-    
+                <input type="text" name="nome" id="inome" placeholder="Andrei de Oliveira Werner" required>
+
+                <label for="iid">CPF.:</label>
+                <input name="id" id="iid" placeholder="000.000.000-00" required>
+
+                <label for="imat">Matrícula.:</label>
+                <input name="mat" id="imat" placeholder="Matrícula imobiliária">
             </p>
+            <p>
+                <input type="submit" value="Registrar">
+            </p>
+            </fieldset>
         </form>
-        </div>
+        </Div>
     </main>
 </body>
 </html>
