@@ -83,6 +83,7 @@ nav a:hover {
 main {
     background-color: var(--cor04);
     width: 99%;
+    height: 1200px;
     margin: auto;
     box-shadow: 1px 2px 15px black;
     margin-top: 15px;
@@ -125,6 +126,7 @@ aside {
     background-color: #1C181D;
     margin: auto;
     margin-top: 6px;
+    padding-bottom: 20px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -153,6 +155,48 @@ aside {
     text-align: center;
     font-family: 'h2';
     font-size: 1.3em;
+}
+#q1 {
+    background: url(img/topo.jpeg);
+    background-size:170%;
+    background-repeat:no-repeat ;
+    background-position:bottom center ;
+}
+h6{
+    padding-top: 50px;
+    font-family:'h2';
+    font-size: 0.8em;
+    color:#202C39;
+    text-align: center;
+}
+.button {
+    position: absolute;
+    margin-top: 160px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #202C39;
+    padding: 10px;
+    width:388px;
+    text-align: center;
+}
+picture > img {
+    padding-top:20px;
+    margin: 0px;
+    display:block;
+    margin: auto;
+    width: 120px;
+    height: 120px;
+}
+.button > h5 {
+    font-size: 1.5em;
+    font-family: 'h2';
+}
+.button  a {
+    text-decoration:none;
+    color: white;
+
+}
+.button:hover {
+    background-color: #ce9436;
 }
 /* Responsive Styles */
 @media (max-width: 768px) {
