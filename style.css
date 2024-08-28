@@ -149,29 +149,42 @@ aside {
     font-family: 'vertent';
     font-size: 1.8em;
     margin-top: 5px;
+    background-color: #202c393f;
+    text-shadow: 1px 1px 4px black;
 }
 #q1 > p, #q2 > p {
-    color: #202C39;
+    color: #ffffff;
     text-align: center;
     font-family: 'h2';
     font-size: 1.3em;
+    text-shadow: 1px 1px 4px black;
+    margin-bottom: 15px;
 }
 #q1 {
-    background: url(img/topo.jpeg);
+    background: url(img/lote.jpg);
     background-size:170%;
     background-repeat:no-repeat ;
     background-position:bottom center ;
+    background-size: cover;
 }
-h6{
-    padding-top: 50px;
+#q2 {
+    background: url(img/geo.jpg);
+    background-size:170%;
+    background-repeat:no-repeat ;
+    background-size:cover;
+}
+.h6{
+    text-align: center;
     font-family:'h2';
     font-size: 0.8em;
-    color:#202C39;
-    text-align: center;
+    color:white;
+    text-shadow: 1px 3px 10px black;
+    background-color: #1c2c3d56;
+    margin: auto;
 }
 .button {
     position: absolute;
-    margin-top: 160px;
+    margin-top: 110px;
     border-radius: 10px 10px 10px 10px;
     background-color: #202C39;
     padding: 10px;
@@ -179,12 +192,12 @@ h6{
     text-align: center;
 }
 picture > img {
-    padding-top:20px;
+    padding-top:40px;
     margin: 0px;
     display:block;
     margin: auto;
-    width: 120px;
-    height: 120px;
+    width: 190px;
+    height: 190px;
 }
 .button > h5 {
     font-size: 1.5em;
