@@ -143,7 +143,7 @@ aside {
     display: inline-block;
     margin-top: 30px;
 }
-#q1 > h4, #q2 > h4 {
+#q1 > h4, #q2 >h4, #q3> h4 {
     text-align: center;
     color: var(--cor03);
     font-family: 'vertent';
@@ -152,7 +152,7 @@ aside {
     background-color: #202c393f;
     text-shadow: 1px 1px 4px black;
 }
-#q1 > p, #q2 > p {
+#q1 > p, #q2 > p, #q3 > p {
     color: #ffffff;
     text-align: center;
     font-family: 'h2';
@@ -173,6 +173,13 @@ aside {
     background-repeat:no-repeat ;
     background-size:cover;
 }
+#q3 {
+    background: url(img/loteamento.png);
+    background-size:170%;
+    background-repeat:no-repeat ;
+    background-position:bottom center ;
+    background-size: cover;
+}
 .h6{
     text-align: center;
     font-family:'h2';
@@ -184,7 +191,7 @@ aside {
 }
 .button {
     position: absolute;
-    margin-top: 110px;
+    margin-top: 130px;
     border-radius: 10px 10px 10px 10px;
     background-color: #202C39;
     padding: 10px;
@@ -196,8 +203,8 @@ picture > img {
     margin: 0px;
     display:block;
     margin: auto;
-    width: 190px;
-    height: 190px;
+    width: 170px;
+    height: 180px;
 }
 .button > h5 {
     font-size: 1.5em;
