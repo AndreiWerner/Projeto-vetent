@@ -62,7 +62,7 @@ header picture > img {
     height: 160px;
 }
 nav {
-    background-color: var(--cor0);
+    background-color: #111b27cb;
     text-align: center;
 }
 nav > a {
@@ -136,8 +136,8 @@ aside {
 }
 .quadrado1, .quadrado2, .quadrado3 {
     border: 1px solid black;
-    width: 390px;
-    height: 500px;
+    width: 45%;
+    height: 60%;
     border-radius: 10px;
     background-color: var(--cor04);
     display: inline-block;
@@ -147,7 +147,7 @@ aside {
     text-align: center;
     color: var(--cor03);
     font-family: 'vertent';
-    font-size: 1.8em;
+    font-size: 1.3em;
     margin-top: 5px;
     background-color: #202c393f;
     text-shadow: 1px 1px 4px black;
@@ -158,7 +158,6 @@ aside {
     font-family: 'h2';
     font-size: 1.3em;
     text-shadow: 1px 1px 4px black;
-    margin-bottom: 15px;
 }
 #q1 {
     background: url(img/lote.jpg);
@@ -196,7 +195,7 @@ aside {
     padding: 6px;
     border-radius: 10px;
     box-shadow: 1px 1px 2px black;
-    margin-top: 130px;
+    margin-top: 20%;
 
 }
 .quadrado2 > .button {
@@ -206,7 +205,7 @@ aside {
     padding: 6px;
     border-radius: 10px;
     box-shadow: 1px 1px 2px black;
-    margin-top: 130px;
+    margin-top: 20%;
 
 }
 .quadrado3 > .button {
@@ -216,7 +215,7 @@ aside {
     padding: 6px;
     border-radius: 10px;
     box-shadow: 1px 1px 2px black;
-    margin-top: 130px;
+    margin-top: 20%;
 
 }
 picture > img {
@@ -224,8 +223,8 @@ picture > img {
     margin: 0px;
     display:block;
     margin: auto;
-    width: 170px;
-    height: 180px;
+    width: 40%;
+    height: 40%;
 }
 .button > h5 {
     font-size: 1.5em;
@@ -246,7 +245,7 @@ picture > img {
         padding: 20px;
     }
     header h1 {
-        font-size: 1.2em;
+        font-size: 1.4em;
         padding-top: 10px;
     }
     header img, header picture > img {
@@ -254,7 +253,7 @@ picture > img {
         height: auto;
     }
     nav > a {
-        font-size: 1em;
+        font-size: 1.2em;
         margin-right: 10px;
     }
     main {
@@ -267,11 +266,6 @@ picture > img {
         width: 100%;
         margin-top: 10px;
     }
-    .quadrado {
-        width: 100%;
-        height: auto;
-        margin-top: 10px;
-    }
     article h2, article > h3 {
         font-size: 1.2em;
         padding: 10px;
@@ -280,17 +274,5 @@ picture > img {
         font-size: 1em;
         padding: 10px;
     }
-}
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1em;
-    }
-    nav > a {
-        font-size: 0.8em;
-        margin-right: 5px;
-    }
-    .quadrado {
-        width: 100%;
-        height: auto;
-    }
+    
 }
