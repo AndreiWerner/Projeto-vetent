@@ -14,10 +14,10 @@
 }
 
 :root {
-    --cor01: #202C39;
+    --cor01:#080708;
     --cor0: #868686;
-    --cor03: #EDB458;
-    --cor04: #EAF6FF;
+    --cor03: #f0dcca;
+    --cor04: #faf5f0;
     --cor05: #4E1B0A;
 }
 * {
@@ -28,7 +28,8 @@
 header {
     height: 140px;
     text-align: center;
-    background-image: url(img/fundo.png);
+    background-color:#080708;
+    background:url(img/fundo.png);
 }
 header h1 {
     font-family: 'Vertent';
@@ -62,7 +63,7 @@ header picture > img {
     height: 160px;
 }
 nav {
-    background-color: #111b27cb;
+    background-color: #1C181D;
     text-align: center;
 }
 nav > a {
@@ -136,8 +137,8 @@ aside {
 }
 .quadrado1, .quadrado2, .quadrado3 {
     border: 1px solid black;
-    width: 45%;
-    height: 60%;
+    width: 31%;
+    height: 70%;
     border-radius: 10px;
     background-color: var(--cor04);
     display: inline-block;
