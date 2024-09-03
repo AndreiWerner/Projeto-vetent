@@ -29,22 +29,24 @@ header {
     height: 140px;
     text-align: center;
     background-color:#080708;
-    background:url(img/fundo.png);
+    background:url(img/Backs/fundo.png);
+    background-size: cover;
 }
-header h1 {
+header  h1 {
     font-family: 'Vertent';
     color: var(--cor03);
+    text-align: center;
+    padding-right: 10px;
+    padding-top: 10px;
     font-size: 2.5em;
-    padding-top: 20px;
-    font-weight: 500;
     text-shadow: 1px 1px 7px black;
 }
 header > p {
     color: var(--cor04);
     font-size: 1em;
-    font-family: 'p';
-    margin: 0;
-    padding: 0;
+    font-family: 'Vertent';
+    letter-spacing: 10px;
+    text-align: center;
 }
 div.header {
     margin: 0;
@@ -84,7 +86,7 @@ nav a:hover {
 main {
     background-color: var(--cor04);
     width: 99%;
-    height: 1200px;
+    height: 1900px;
     margin: auto;
     box-shadow: 1px 2px 15px black;
     margin-top: 15px;
@@ -92,6 +94,10 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+article {
+    padding: 0px;
+    margin: 0px;
 }
 article h2 {
     font-family: 'h2';
@@ -123,7 +129,7 @@ article > h3 {
     padding: 0;
 }
 aside {
-    width: 95%;
+    width: 80%;
     background-color: #1C181D;
     margin: auto;
     margin-top: 6px;
@@ -135,16 +141,16 @@ aside {
     gap: 10px;
     flex-wrap: wrap;
 }
-.quadrado1, .quadrado2, .quadrado3 {
+.quadrado1, .quadrado2, .quadrado3, .quadrado4 {
     border: 1px solid black;
-    width: 31%;
+    width: 45%;
     height: 70%;
     border-radius: 10px;
     background-color: var(--cor04);
     display: inline-block;
     margin-top: 30px;
 }
-#q1 > h4, #q2 >h4, #q3> h4 {
+#q1 > h4, #q2 >h4, #q3> h4, #q4 > h4 {
     text-align: center;
     color: var(--cor03);
     font-family: 'vertent';
@@ -153,7 +159,7 @@ aside {
     background-color: #202c393f;
     text-shadow: 1px 1px 4px black;
 }
-#q1 > p, #q2 > p, #q3 > p {
+#q1 > p, #q2 > p, #q3 > p , #q4 > p{
     color: #ffffff;
     text-align: center;
     font-family: 'h2';
@@ -161,20 +167,27 @@ aside {
     text-shadow: 1px 1px 4px black;
 }
 #q1 {
-    background: url(img/lote.jpg);
+    background: url(img/Backs/lote.jpg);
     background-size:170%;
     background-repeat:no-repeat ;
     background-position:bottom center ;
     background-size: cover;
 }
 #q2 {
-    background: url(img/geo.jpg);
+    background: url(img/Backs/geo.jpg);
     background-size:170%;
     background-repeat:no-repeat ;
     background-size:cover;
 }
 #q3 {
-    background: url(img/loteamento.png);
+    background: url(img/Backs/loteamento.png);
+    background-size:170%;
+    background-repeat:no-repeat ;
+    background-position:bottom center ;
+    background-size: cover;
+}
+#q4 {
+    background: url(img/Backs/divisa.jpeg);
     background-size:170%;
     background-repeat:no-repeat ;
     background-position:bottom center ;
@@ -219,6 +232,16 @@ aside {
     margin-top: 20%;
 
 }
+.quadrado4 > .button {
+    background-color:#202C39;
+    text-align: center;
+    margin:auto;
+    padding: 6px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px black;
+    margin-top: 20%;
+
+}
 picture > img {
     padding-top:40px;
     margin: 0px;
@@ -238,6 +261,38 @@ picture > img {
 }
 .button:hover {
     background-color: #ce9436;
+}
+.Contatos {
+    width: 100%;
+    height:40px;
+    background-color: #1C181D;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.Contatos > h1 {
+    font-family: 'Vertent';
+    color: #EAF6FF;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+.bloco {
+    background-color: #252125;
+    height: 500px;
+    border-radius: 0px 0px 10px 10px; 
+}
+.bloco  img {
+    width: 4%;
+    height: 4%;
+    border-radius: 20%;
+}
+.bloco p {
+    color: white;
+    font-family:'h2';
 }
 /* Responsive Styles */
 @media (max-width: 768px) {
